@@ -66,7 +66,7 @@ public class OrdersManager : MonoBehaviour
     // Array of sprites in People folder
     [SerializeField] private Sprite[] peopleSprites;
 
-    [SerializeField] private int maxOrders;
+    [SerializeField] private int maxOrders = 4;
     
 
     // Start is called before the first frame update
