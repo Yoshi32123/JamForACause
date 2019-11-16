@@ -112,49 +112,41 @@ public class GameManager : MonoBehaviour
         {
             ClearElements();
             molecule = Instantiate(water, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, saltFormula))
         {
             ClearElements();
             molecule = Instantiate(salt, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, peroxideFormula))
         {
             ClearElements();
             molecule = Instantiate(peroxide, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, rustFormula))
         {
             ClearElements();
             molecule = Instantiate(rust, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, dryIceFormula))
         {
             ClearElements();
             molecule = Instantiate(dryIce, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, bakingSodaFormula))
         {
             ClearElements();
             molecule = Instantiate(bakingSoda, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, vinegarFormula))
         {
             ClearElements();
             molecule = Instantiate(vinegar, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, milkFormula))
         {
             ClearElements();
             molecule = Instantiate(milk, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
-            ordersManager.CheckOrders(molecule);
         }
         else
         {
