@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1130425180698215011}
   - component: {fileID: 5274348225531516013}
   m_Layer: 0
-  m_Name: IronMolecule
-  m_TagString: Untagged
+  m_Name: Iron
+  m_TagString: Iron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,3 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  mainCam: {fileID: 0}

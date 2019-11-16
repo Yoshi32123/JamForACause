@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2392211103102486173}
   - component: {fileID: 8383402174112848118}
   m_Layer: 0
-  m_Name: HydrogenMolecule
-  m_TagString: Untagged
+  m_Name: Hydrogen
+  m_TagString: Hydrogen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,3 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  mainCam: {fileID: 0}

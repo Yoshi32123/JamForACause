@@ -23,7 +23,7 @@ public class Beaker : MonoBehaviour
         if (mouseHover && !gameManager.elementSelected)
         {
             mousePosition = Input.mousePosition;
-            Instantiate(element, Camera.main.ScreenToWorldPoint(mousePosition), Quaternion.identity);
+            gameManager.elementStorage = Instantiate(element, Camera.main.ScreenToWorldPoint(mousePosition), Quaternion.identity);
             mouseHover = false;
             gameManager.elementSelected = true;
         }

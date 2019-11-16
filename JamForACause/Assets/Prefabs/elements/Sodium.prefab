@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5903194508465703722}
   - component: {fileID: 7739925302795702528}
   m_Layer: 0
-  m_Name: SodiumMolecule
-  m_TagString: Untagged
+  m_Name: Sodium
+  m_TagString: Sodium
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,3 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  mainCam: {fileID: 0}

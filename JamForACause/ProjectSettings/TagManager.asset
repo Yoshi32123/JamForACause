@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Pickup
   - Score
+  - Chlorine
+  - Hydrogen
+  - Iron
+  - Oxygen
+  - Sodium
   layers:
   - Default
   - TransparentFX

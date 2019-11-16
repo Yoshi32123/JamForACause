@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3957121443161665698}
   - component: {fileID: 5394173215582825608}
   m_Layer: 0
-  m_Name: ChlorineMolecule
-  m_TagString: Untagged
+  m_Name: Chlorine
+  m_TagString: Chlorine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,3 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  mainCam: {fileID: 0}

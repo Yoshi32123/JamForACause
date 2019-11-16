@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 98791199304007587}
   - component: {fileID: 1058272607405212437}
   m_Layer: 0
-  m_Name: OxygenMolecule
-  m_TagString: Untagged
+  m_Name: Oxygen
+  m_TagString: Oxygen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,3 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  mainCam: {fileID: 0}
