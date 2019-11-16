@@ -210,4 +210,27 @@ public class OrdersManager : MonoBehaviour
                 return "UntypedMolecule";
         }
     }
+
+    /// <summary>
+    /// Checks passed in molecule to see if it matches a current order, updates score/strikes accordingly
+    /// </summary>
+    /// <param name="molecule"></param>
+    /// <returns></returns>
+    public bool CheckOrders(GameObject molecule)
+    {
+        //foreach(GameObject order in orders)
+        //{
+        //    if(MoleculeToString(order.GetComponent<Order>().moleculeOrdered) == molecule.tag)
+        //    {
+        //        return true;
+        //    }
+        //}
+        //return false;
+        return false;
+    }
+
+    public void CompleteOrder()
+    {
+
+    }
 }
