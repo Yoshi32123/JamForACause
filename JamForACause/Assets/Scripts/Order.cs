@@ -57,7 +57,7 @@ public class Order : MonoBehaviour
     void Start()
     {
         // Get the timer bar to scale it appropriately
-        timerBar = gameObject.transform.GetChild(1).GetChild(1).GetChild(1);
+        timerBar = gameObject.transform.GetChild(2).GetChild(1).GetChild(1);
 
         // Get timer bar Image Script to recolor
         barImageScript = timerBar.GetComponent<Image>();
