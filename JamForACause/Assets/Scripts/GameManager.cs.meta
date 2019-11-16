@@ -3,7 +3,18 @@ guid: 2dbaa8734e3ac744ea816316e23a19c0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - elementStorage: {instanceID: 0}
+  - dish: {instanceID: 0}
+  - water: {instanceID: 0}
+  - salt: {instanceID: 0}
+  - peroxide: {instanceID: 0}
+  - rust: {instanceID: 0}
+  - dryIce: {instanceID: 0}
+  - bakingSoda: {instanceID: 0}
+  - vinegar: {instanceID: 0}
+  - milk: {instanceID: 0}
+  - aluminum: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
