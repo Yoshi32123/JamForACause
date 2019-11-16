@@ -108,12 +108,12 @@ public class OrdersManager : MonoBehaviour
         // Instantiate GameObject
         Vector3 startingPosition = new Vector3(order_starting_x - ORDER_DISTANCE_FACTOR * (orders.Count - 1), ORDER_OFFSCREEN_Y);
         GameObject order = Instantiate(orderPrefab, startingPosition, Quaternion.identity);
+
         // Get Text in Order
         Text orderMoleculeText = order.GetComponentInChildren<Text>();
+
         // Get Script in Order
         Order orderScript = order.GetComponent<Order>();
-
-        
 
         // Set starting X equal to the Instantiation position
         orderScript.X = order.transform.position.x;
@@ -130,10 +130,13 @@ public class OrdersManager : MonoBehaviour
 
         // Number of items in Molecule enum
         int moleculeEnumCount = Enum.GetNames(typeof(Molecule)).Length;
+
         // Create a random Molecule
         Molecule randomMolecule = (Molecule)UnityEngine.Random.Range(0, moleculeEnumCount);
+
         // Set Order text to the random Molecule
         orderMoleculeText.text = MoleculeToString(randomMolecule);
+
         // Set Molecule Ordered
         orderScript.moleculeOrdered = randomMolecule;
 
