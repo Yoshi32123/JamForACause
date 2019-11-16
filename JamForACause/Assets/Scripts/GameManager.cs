@@ -34,12 +34,12 @@ public class GameManager : MonoBehaviour
     {
         elements = new int[] { 0, 0, 0, 0, 0, 0 };
         /*
-         index 0: Chlorine
-         index 1: Hydrogen
+         index 0: Hydrogen
+         index 1: Oxygen
          index 2: Iron
-         index 3: Oxygen
-         index 4: Sodium
-         index 5 : Carbon
+         index 3: Sodium
+         index 4: Chlorine
+         index 5: Carbon
          */
     }
 
@@ -83,15 +83,15 @@ public class GameManager : MonoBehaviour
 
     public void HandleElementDrop()
     {
-        if (elementStorage.tag == "Chlorine")
+        if (elementStorage.tag == "Hydrogen")
             elements[0]++;
-        else if (elementStorage.tag == "Hydrogen")
+        else if (elementStorage.tag == "Oxygen")
             elements[1]++;
         else if (elementStorage.tag == "Iron")
             elements[2]++;
-        else if (elementStorage.tag == "Oxygen")
-            elements[3]++;
         else if (elementStorage.tag == "Sodium")
+            elements[3]++;
+        else if (elementStorage.tag == "Chlorine")
             elements[4]++;
         else if (elementStorage.tag == "Carbon")
             elements[5]++;
