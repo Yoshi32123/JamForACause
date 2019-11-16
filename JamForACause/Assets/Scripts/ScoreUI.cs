@@ -1,9 +1,11 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreUI : MonoBehaviour
 {
     [SerializeField] private int score;
+    [SerializeField] private int strikes;
 
     private Text scoreText;
 
@@ -18,7 +20,7 @@ public class ScoreUI : MonoBehaviour
             if (value >= 0)
                 score = value;
 
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Score: " + score + "\nStrikes: " + strikes;
         }
     }
 
@@ -28,16 +30,22 @@ public class ScoreUI : MonoBehaviour
         // Set starting score at 0
         score = 0;
 
+        //Set starting strikes to 0
+        strikes = 0;
+
         // Get score Text
         scoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
 
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + score + "\nStrikes: " + strikes;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (strikes == 3)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     /// <summary>
@@ -45,13 +53,12 @@ public class ScoreUI : MonoBehaviour
     /// </summary>
     public void UpdateScore()
     {
-        // Set starting score at 0
         score++;
 
         // Get score Text
         scoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
 
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + score + "\nStrikes: " + strikes;
     }
 
     /// <summary>
@@ -59,6 +66,8 @@ public class ScoreUI : MonoBehaviour
     /// </summary>
     public void UpdateStrikes()
     {
-
+        strikes++;
+        scoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
+        scoreText.text = "Score: " + score + "\nStrikes: " + strikes;
     }
 }

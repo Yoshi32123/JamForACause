@@ -55,6 +55,7 @@ public class OrdersManager : MonoBehaviour
 
     // Current time left until next Order is instantiated
     private float timer;
+    private bool timeout = false;
 
     // Interval of time between orders (seconds)
     [SerializeField] private float interval = 15;
@@ -162,6 +163,19 @@ public class OrdersManager : MonoBehaviour
     /// <param name="order">Order to remove.</param>
     public void RemoveOrder(GameObject order)
     {
+
+        //Check if timed out
+        if(order.GetComponent<Order>().Timer <= 0)
+        {
+            GameObject scoreManager = GameObject.FindGameObjectWithTag("ScoreUIManager");
+
+            if (!timeout)
+            {
+                scoreManager.GetComponent<ScoreUI>().UpdateStrikes();
+                timeout = true;
+            }
+        }
+
         // Remove from the list
         orders.Remove(order);
 
