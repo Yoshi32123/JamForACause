@@ -25,6 +25,7 @@ TagManager:
   - Dry Ice
   - Baking Soda
   - Rust
+  - FormulasContainer
   layers:
   - Default
   - TransparentFX
