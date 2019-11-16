@@ -47,13 +47,10 @@ public class Item : MonoBehaviour
 
         if (hit.collider != null)
         {
-            if (hit.collider.gameObject.tag == "Pickup")
+            if (hit.collider.name == gameObject.name)
             {
-                if (hit.collider.name == gameObject.name)
-                {
-                    Debug.Log(hit.collider.name);
-                    mouseHover = true;
-                }
+                Debug.Log(hit.collider.name);
+                mouseHover = true;
             }
         }
     }
