@@ -123,6 +123,12 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void CheckCombination()
     {
+        if (molecule != null)
+        {
+            Destroy(molecule);
+            molecule = null;
+        }
+
         if (CompareFormulas(elements, waterFormula))
         {
             ClearElements();

@@ -947,6 +947,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0, z: 0}
   moveSpeed: 0.2
+--- !u!1 &735576962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2397809142278829362, guid: e017c969988b2f54f85f879dcef174be,
+    type: 3}
+  m_PrefabInstance: {fileID: 1387925890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &771481321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,9 +1115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbaa8734e3ac744ea816316e23a19c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orderManagerObject: {fileID: 1035662569}
+  orderManagerObject: {fileID: 735576962}
   ordersManager: {fileID: 0}
-  scoreObject: {fileID: 903023910}
+  scoreObject: {fileID: 1617262021}
   scoreUI: {fileID: 0}
   elementSelected: 0
   elementStorage: {fileID: 0}
@@ -1128,18 +1134,6 @@ MonoBehaviour:
     type: 3}
   vinegar: {fileID: 3242551326186185347, guid: cd96b5d68977f8b4b8eeef486d1310c1, type: 3}
   milk: {fileID: 6668691491598860337, guid: c1e4c88617eaa4d4498e881159e50044, type: 3}
---- !u!1 &903023910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6334371249728792074, guid: 54b11a0c770e6fe4eb73009f57dbf181,
-    type: 3}
-  m_PrefabInstance: {fileID: 1482936702}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1035662569 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2397809142278829362, guid: e017c969988b2f54f85f879dcef174be,
-    type: 3}
-  m_PrefabInstance: {fileID: 1387925890}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036666569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2367,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611731404}
   m_CullTransparentMesh: 0
+--- !u!1 &1617262021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6334371249728792074, guid: 54b11a0c770e6fe4eb73009f57dbf181,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482936702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1787282810
 GameObject:
   m_ObjectHideFlags: 0
