@@ -54,8 +54,6 @@ public class FormulasUI : MonoBehaviour
         else
             Y = OFFSCREEN_Y;
 
-        Debug.Log(formulasContainer.transform.position);
-
         // Smoothly move towards it's position
         formulasContainer.transform.localPosition = Vector3.Lerp(formulasContainer.transform.localPosition, position, moveSpeed);
     }
