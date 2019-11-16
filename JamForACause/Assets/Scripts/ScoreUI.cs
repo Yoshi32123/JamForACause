@@ -39,4 +39,20 @@ public class ScoreUI : MonoBehaviour
     {
         
     }
+
+    /// <summary>
+    /// Updates score
+    /// </summary>
+    public void UpdateScore()
+    {
+
+    }
+
+    /// <summary>
+    /// Updates strikes, checks if theres three strikes?
+    /// </summary>
+    public void UpdateStrikes()
+    {
+
+    }
 }
