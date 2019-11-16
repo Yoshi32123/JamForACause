@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Script Info:")]
+    public GameObject orderManagerObject;
     public OrdersManager ordersManager;
     public ScoreUI scoreUI;
 
+    [Header("Element info:")]
     public bool elementSelected = false;
     public GameObject elementStorage;
     public GameObject dish;
