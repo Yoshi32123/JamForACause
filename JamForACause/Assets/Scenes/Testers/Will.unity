@@ -1278,6 +1278,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: d2954f92d58cdf0439e3d107f5b87b52,
         type: 3}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: orderLength
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e017c969988b2f54f85f879dcef174be, type: 3}
 --- !u!1 &1457816611
@@ -1414,6 +1419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreUI
       objectReference: {fileID: 0}
+    - target: {fileID: 6334371249728792074, guid: 54b11a0c770e6fe4eb73009f57dbf181,
+        type: 3}
+      propertyPath: m_TagString
+      value: ScoreUIManager
+      objectReference: {fileID: 0}
     - target: {fileID: 6334371249105348586, guid: 54b11a0c770e6fe4eb73009f57dbf181,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1473,11 +1483,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 189
-      objectReference: {fileID: 0}
-    - target: {fileID: 6334371249728792074, guid: 54b11a0c770e6fe4eb73009f57dbf181,
-        type: 3}
-      propertyPath: m_TagString
-      value: ScoreUIManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54b11a0c770e6fe4eb73009f57dbf181, type: 3}
