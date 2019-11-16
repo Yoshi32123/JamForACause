@@ -185,9 +185,9 @@ public class GameManager : MonoBehaviour
 
     /// <summary>
     /// Calls the internal CheckCombination Function
-    /// Function Attached to Submit Button
+    /// Function Attached to Create Button
     /// </summary>
-    public void Submit()
+    public void Create()
     {
         CheckCombination();
     }

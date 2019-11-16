@@ -134,6 +134,8 @@ public class OrdersManager : MonoBehaviour
         Molecule randomMolecule = (Molecule)UnityEngine.Random.Range(0, moleculeEnumCount);
         // Set Order text to the random Molecule
         orderMoleculeText.text = MoleculeToString(randomMolecule);
+        // Set Molecule Ordered
+        orderScript.moleculeOrdered = randomMolecule;
 
         // Add order to list
         orders.Add(order);

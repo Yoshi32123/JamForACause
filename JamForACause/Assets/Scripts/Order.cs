@@ -12,6 +12,9 @@ public class Order : MonoBehaviour
     // Position of Order Object
     public Vector3 position;
 
+    // Molecule asked by the client
+    public Molecule moleculeOrdered;
+
     // Time left to complete order
     public float Timer { get; set; }
 
