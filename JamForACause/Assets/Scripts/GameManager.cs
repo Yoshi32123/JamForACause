@@ -111,49 +111,49 @@ public class GameManager : MonoBehaviour
         if (CompareFormulas(elements, waterFormula))
         {
             ClearElements();
-            molecule = Instantiate(water, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(water, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, saltFormula))
         {
             ClearElements();
-            molecule = Instantiate(salt, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(salt, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, peroxideFormula))
         {
             ClearElements();
-            molecule = Instantiate(peroxide, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(peroxide, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, rustFormula))
         {
             ClearElements();
-            molecule = Instantiate(rust, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(rust, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, dryIceFormula))
         {
             ClearElements();
-            molecule = Instantiate(dryIce, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(dryIce, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, bakingSodaFormula))
         {
             ClearElements();
-            molecule = Instantiate(bakingSoda, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(bakingSoda, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, vinegarFormula))
         {
             ClearElements();
-            molecule = Instantiate(vinegar, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(vinegar, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else if (CompareFormulas(elements, milkFormula))
         {
             ClearElements();
-            molecule = Instantiate(milk, dish.transform.position, Quaternion.identity);
+            molecule = Instantiate(milk, new Vector3(dish.transform.position.x, dish.transform.position.y, 0), Quaternion.identity);
             ordersManager.CheckOrders(molecule);
         }
         else
