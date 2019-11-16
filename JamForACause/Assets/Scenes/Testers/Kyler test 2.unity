@@ -565,6 +565,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561716087}
   m_CullTransparentMesh: 0
+--- !u!1 &714775969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6334371249728792074, guid: 54b11a0c770e6fe4eb73009f57dbf181,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482936702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &771481321
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,18 +733,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbaa8734e3ac744ea816316e23a19c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orderManagerObject: {fileID: 1622197016}
+  ordersManager: {fileID: 0}
+  scoreObject: {fileID: 714775969}
+  scoreUI: {fileID: 0}
   elementSelected: 0
   elementStorage: {fileID: 0}
   dish: {fileID: 1787282810}
   elements: 
-  water: {fileID: 0}
-  salt: {fileID: 0}
-  peroxide: {fileID: 0}
+  molecule: {fileID: 0}
+  water: {fileID: 7841262255436067838, guid: e1b1a022a3b10ae47baa9e670fa7427c, type: 3}
+  salt: {fileID: 5325067160244723658, guid: 1fce15c51b3651a4f9202ce8cd602b0d, type: 3}
+  peroxide: {fileID: 5085772898472024224, guid: 9e26ece4bc7a46d4fb97390ab4c77dbc,
+    type: 3}
   rust: {fileID: 0}
-  dryIce: {fileID: 0}
-  bakingSoda: {fileID: 0}
-  vinegar: {fileID: 0}
-  milk: {fileID: 0}
+  dryIce: {fileID: 7563450901717428300, guid: 07862dc7d028b474f82cae4344d03ce0, type: 3}
+  bakingSoda: {fileID: 664462039681199050, guid: 793dcb5c58e19354ab574200087c1621,
+    type: 3}
+  vinegar: {fileID: 3242551326186185347, guid: cd96b5d68977f8b4b8eeef486d1310c1, type: 3}
+  milk: {fileID: 6668691491598860337, guid: c1e4c88617eaa4d4498e881159e50044, type: 3}
 --- !u!1 &1036666569
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 5377173422252013146, guid: b180383eae4944642aef411e656a12b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5377173422252013146, guid: b180383eae4944642aef411e656a12b7,
         type: 3}
@@ -1224,6 +1237,47 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: peopleSprites.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: peopleSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f2617b6f2745ca46a8c2b614957594a,
+        type: 3}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: peopleSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 39993f25a41e9224cace22aa03363874,
+        type: 3}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: peopleSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: de2aa8ba584cb424a859491e1420420d,
+        type: 3}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: peopleSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: f566416bd6e0a974085846198dcfa851,
+        type: 3}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: peopleSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 92013fbf85c5fbd4ab20d3ae8d28760d,
+        type: 3}
+    - target: {fileID: 2397809142278829363, guid: e017c969988b2f54f85f879dcef174be,
+        type: 3}
+      propertyPath: peopleSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: d2954f92d58cdf0439e3d107f5b87b52,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e017c969988b2f54f85f879dcef174be, type: 3}
 --- !u!1 &1457816611
@@ -1633,6 +1687,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1622197016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2397809142278829362, guid: e017c969988b2f54f85f879dcef174be,
+    type: 3}
+  m_PrefabInstance: {fileID: 1387925890}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1787282810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1772,7 @@ Transform:
   m_Children:
   - {fileID: 1137267245}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1787282813
 BoxCollider2D:
@@ -1823,7 +1883,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 894167629}
-        m_MethodName: Submit
+        m_MethodName: CheckCombination
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

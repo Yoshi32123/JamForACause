@@ -51,7 +51,7 @@ public class OrdersManager : MonoBehaviour
     public GameObject orderPrefab;
 
     // List of all orders at play
-    private List<GameObject> orders;
+    public List<GameObject> orders;
 
     // Current time left until next Order is instantiated
     private float timer;
@@ -191,7 +191,7 @@ public class OrdersManager : MonoBehaviour
     /// </summary>
     /// <param name="molecule">Molecule to convert.</param>
     /// <returns>String representation of the Molecule.</returns>
-    private string MoleculeToString(Molecule molecule)
+    public string MoleculeToString(Molecule molecule)
     {
         switch (molecule)
         {
@@ -214,28 +214,5 @@ public class OrdersManager : MonoBehaviour
             default:
                 return "UntypedMolecule";
         }
-    }
-
-    /// <summary>
-    /// Checks passed in molecule to see if it matches a current order, updates score/strikes accordingly
-    /// </summary>
-    /// <param name="molecule"></param>
-    /// <returns></returns>
-    public bool CheckOrders(GameObject molecule)
-    {
-        //foreach(GameObject order in orders)
-        //{
-        //    if(MoleculeToString(order.GetComponent<Order>().moleculeOrdered) == molecule.tag)
-        //    {
-        //        return true;
-        //    }
-        //}
-        //return false;
-        return false;
-    }
-
-    public void CompleteOrder()
-    {
-
     }
 }

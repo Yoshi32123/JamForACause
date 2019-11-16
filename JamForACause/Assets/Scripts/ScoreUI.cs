@@ -45,7 +45,13 @@ public class ScoreUI : MonoBehaviour
     /// </summary>
     public void UpdateScore()
     {
+        // Set starting score at 0
+        score++;
 
+        // Get score Text
+        scoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
+
+        scoreText.text = "Score: " + score;
     }
 
     /// <summary>
