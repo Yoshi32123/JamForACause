@@ -16,6 +16,9 @@ public class ElementsUI : MonoBehaviour
 
         // Get array of of Text Objects in UI
         elementsText = GameObject.FindGameObjectWithTag("ElementsList").GetComponentsInChildren<Text>();
+
+        Debug.Log(elementsInDish.Length);
+        Debug.Log(elementsText.Length);
     }
 
     // Update is called once per frame
@@ -50,6 +53,8 @@ public class ElementsUI : MonoBehaviour
                 return "Na";
             case "Chlorine":
                 return "Cl";
+            case "Carbon":
+                return "C";
             default:
                 return "null";
         }

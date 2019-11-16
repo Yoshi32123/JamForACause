@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     public GameObject milk;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         elements = new int[] { 0, 0, 0, 0, 0, 0 };
         /*
