@@ -107,49 +107,51 @@ public class GameManager : MonoBehaviour
     {
         if (CompareFormulas(elements, waterFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(water, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, saltFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(salt, dish.transform.position, Quaternion.identity);            
         }
         else if (CompareFormulas(elements, peroxideFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(peroxide, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, rustFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(rust, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, dryIceFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(dryIce, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, bakingSodaFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(bakingSoda, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, vinegarFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(vinegar, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, milkFormula))
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = Instantiate(milk, dish.transform.position, Quaternion.identity);
         }
         else
         {
-            elements = new int[] { 0, 0, 0, 0, 0, 0 };
+            ClearElements();
             return molecule = null;
         }
+
+        
     }
 
     public bool CompareFormulas(int[] a, int[] b)
@@ -162,5 +164,26 @@ public class GameManager : MonoBehaviour
             }
         }
         return true;
+    }
+
+    /// <summary>
+    /// Resets the elements array
+    /// Function Attached to Clear Button
+    /// </summary>
+    public void ClearElements()
+    {
+        for (int i = 0; i < elements.Length; i++)
+        {
+            elements[i] = 0;
+        }
+    }
+
+    /// <summary>
+    /// Calls the internal CheckCombination Function
+    /// Function Attached to Submit Button
+    /// </summary>
+    public void Submit()
+    {
+        CheckCombination();
     }
 }
