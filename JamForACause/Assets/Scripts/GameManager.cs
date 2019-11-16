@@ -237,7 +237,9 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
-                        // wrong item
+                        scoreUI.UpdateStrikes();
+                        Destroy(molecule);
+                        molecule = null;
                     }
                 }
             }
