@@ -3,12 +3,15 @@
 public class FormulasUI : MonoBehaviour
 {
     #region Constants
-    private const float ONSCREEN_Y = 100;
+    private const float ONSCREEN_Y = 50;
     private const float OFFSCREEN_Y = -925f;
     #endregion
 
     // Position of Order Object
     public Vector3 position;
+
+    // Whether formula sheet is on screen
+    private bool display;
 
     // Speed at which Object Lerps
     [SerializeField] private float moveSpeed;
@@ -31,6 +34,9 @@ public class FormulasUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set display
+        display = false;
+
         // Get container
         formulasContainer = GameObject.FindGameObjectWithTag("FormulasContainer");
 
@@ -42,8 +48,16 @@ public class FormulasUI : MonoBehaviour
     // Update Physics
     void FixedUpdate()
     {
+        // Set Y position
+        if (display)
+            Y = ONSCREEN_Y;
+        else
+            Y = OFFSCREEN_Y;
+
+        Debug.Log(formulasContainer.transform.position);
+
         // Smoothly move towards it's position
-        formulasContainer.transform.position = Vector3.Lerp(formulasContainer.transform.position, position, moveSpeed);
+        formulasContainer.transform.localPosition = Vector3.Lerp(formulasContainer.transform.localPosition, position, moveSpeed);
     }
 
     /// <summary>
@@ -52,9 +66,6 @@ public class FormulasUI : MonoBehaviour
     /// </summary>
     public void TogglePosition()
     {
-        if (Y == OFFSCREEN_Y)
-            Y = ONSCREEN_Y;
-        else if (Y == ONSCREEN_Y)
-            Y = OFFSCREEN_Y;
+        display = !display;
     }
 }
