@@ -14,7 +14,7 @@ public class FormulasUI : MonoBehaviour
     private bool display;
 
     // Speed at which Object Lerps
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private float moveSpeed = 0.2f;
 
     // Container of formula sheet
     private GameObject formulasContainer;
