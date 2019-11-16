@@ -108,7 +108,7 @@ public class OrdersManager : MonoBehaviour
     private void CreateNewOrder()
     {
         // Instantiate GameObject
-        Vector3 startingPosition = new Vector3(order_starting_x - ORDER_DISTANCE_FACTOR * (orders.Count - 1), ORDER_OFFSCREEN_Y);
+        Vector3 startingPosition = new Vector3(order_starting_x - ORDER_DISTANCE_FACTOR * (orders.Count - 1), ORDER_OFFSCREEN_Y, 2);
         GameObject order = Instantiate(orderPrefab, startingPosition, Quaternion.identity);
 
         // Get Text in Order
@@ -116,6 +116,9 @@ public class OrdersManager : MonoBehaviour
 
         // Get Script in Order
         Order orderScript = order.GetComponent<Order>();
+
+        // Set position Vector to startingPosition
+        orderScript.position = startingPosition;
 
         // Set starting X equal to the Instantiation position
         orderScript.X = order.transform.position.x;
@@ -143,7 +146,7 @@ public class OrdersManager : MonoBehaviour
         orderScript.moleculeOrdered = randomMolecule;
 
         // Get a random sprite in peopleSprites and make it the order's Person's sprite
-        // order.GetComponentInChildren<SpriteRenderer>().sprite = peopleSprites[UnityEngine.Random.Range(0, peopleSprites.Length)];
+        order.GetComponentInChildren<SpriteRenderer>().sprite = peopleSprites[UnityEngine.Random.Range(0, peopleSprites.Length)];
 
         // Add order to list
         orders.Add(order);
