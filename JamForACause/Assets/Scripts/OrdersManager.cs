@@ -64,7 +64,9 @@ public class OrdersManager : MonoBehaviour
     [SerializeField] private float orderLength = 50;
 
     // Array of sprites in People folder
-    [SerializeField] private Sprite[] peopleSprites; 
+    [SerializeField] private Sprite[] peopleSprites;
+
+    [SerializeField] private int maxOrders;
     
 
     // Start is called before the first frame update
@@ -93,11 +95,14 @@ public class OrdersManager : MonoBehaviour
         // Every time <interval> amount of time passes
         if (timer <= 0)
         {
-            // Reset timer
-            timer = interval;
+            if (orders.Count < maxOrders)
+            {
+                // Reset timer
+                timer = interval;
 
-            // Add another Order
-            CreateNewOrder();
+                // Add another Order
+                CreateNewOrder();
+            }
         }
     }
 
