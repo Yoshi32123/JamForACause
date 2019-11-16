@@ -63,6 +63,8 @@ public class OrdersManager : MonoBehaviour
     // Length of time order is available
     [SerializeField] private float orderLength = 50;
 
+    // Array of sprites in People folder
+    [SerializeField] private Sprite[] peopleSprites; 
     
 
     // Start is called before the first frame update
@@ -139,6 +141,9 @@ public class OrdersManager : MonoBehaviour
 
         // Set Molecule Ordered
         orderScript.moleculeOrdered = randomMolecule;
+
+        // Get a random sprite in peopleSprites and make it the order's Person's sprite
+        // order.GetComponentInChildren<SpriteRenderer>().sprite = peopleSprites[UnityEngine.Random.Range(0, peopleSprites.Length)];
 
         // Add order to list
         orders.Add(order);
