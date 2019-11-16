@@ -215,9 +215,17 @@ public class OrdersManager : MonoBehaviour
     {
         //foreach(GameObject order in orders)
         //{
-        //    order.gameObject.
+        //    if(MoleculeToString(order.GetComponent<Order>().moleculeOrdered) == molecule.tag)
+        //    {
+        //        return true;
+        //    }
         //}
+        //return false;
         return false;
     }
 
+    public void CompleteOrder()
+    {
+
+    }
 }
