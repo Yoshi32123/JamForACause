@@ -10,14 +10,14 @@ public class GameManager : MonoBehaviour
     public int[] elements;
 
     //Formulas
-    private int[] waterFormula = new int[] { 0, 2, 0, 1, 0, 0};
-    private int[] saltFormula = new int[] { 1, 0, 0, 0, 1, 0};
-    private int[] peroxideFormula = new int[] { 0, 2, 0, 2, 0, 0};
-    private int[] rustFormula = new int[] { 0, 0, 2, 3, 0, 0};
-    private int[] dryIceFormula = new int[] { 0, 0, 0, 2, 0, 1};
-    private int[] bakingSodaFormula = new int[] { 0, 1, 0, 3, 1, 1};
-    private int[] vinegarFormula = new int[] { 0, 4, 0, 2, 0, 2};
-    private int[] milkFormula = new int[] { 0, 6, 0, 3, 0, 3};
+    private int[] waterFormula = new int[] { 2, 1, 0, 0, 0, 0};
+    private int[] saltFormula = new int[] { 0, 0, 0, 1, 1, 0 };
+    private int[] peroxideFormula = new int[] { 2, 2, 0, 0, 0, 0 };
+    private int[] rustFormula = new int[] { 0, 3, 2, 0, 0, 0 };
+    private int[] dryIceFormula = new int[] { 0, 2, 0, 0, 0, 1 };
+    private int[] bakingSodaFormula = new int[] { 1, 3, 0, 1, 0, 1 };
+    private int[] vinegarFormula = new int[] { 4, 2, 0, 0, 0, 2 };
+    private int[] milkFormula = new int[] { 6, 3, 0, 0, 0, 3 };
 
     //Prefabs
     public GameObject water;
