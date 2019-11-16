@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public OrdersManager ordersManager;
+    public ScoreUI scoreUI;
+
     public bool elementSelected = false;
     public GameObject elementStorage;
     public GameObject dish;
     public int[] elements;
+    public GameObject molecule = null;
 
     //Formulas
     private int[] waterFormula = new int[] { 2, 1, 0, 0, 0, 0};
@@ -99,61 +103,52 @@ public class GameManager : MonoBehaviour
         Destroy(elementStorage);
     }
 
-    //what kind of return value?
-    public bool CheckCombination()
+    public GameObject CheckCombination()
     {
         if (CompareFormulas(elements, waterFormula))
         {
-            Instantiate(water, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(water, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, saltFormula))
         {
-            Instantiate(salt, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(salt, dish.transform.position, Quaternion.identity);            
         }
         else if (CompareFormulas(elements, peroxideFormula))
         {
-            Instantiate(peroxide, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(peroxide, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, rustFormula))
         {
-            Instantiate(rust, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(rust, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, dryIceFormula))
         {
-            Instantiate(dryIce, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(dryIce, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, bakingSodaFormula))
         {
-            Instantiate(bakingSoda, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(bakingSoda, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, vinegarFormula))
         {
-            Instantiate(vinegar, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(vinegar, dish.transform.position, Quaternion.identity);
         }
         else if (CompareFormulas(elements, milkFormula))
         {
-            Instantiate(milk, dish.transform.position, Quaternion.identity);
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return true;
+            return molecule = Instantiate(milk, dish.transform.position, Quaternion.identity);
         }
         else
         {
             elements = new int[] { 0, 0, 0, 0, 0, 0 };
-            return false;
+            return molecule = null;
         }
     }
 
