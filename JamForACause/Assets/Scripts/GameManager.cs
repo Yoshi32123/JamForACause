@@ -229,6 +229,10 @@ public class GameManager : MonoBehaviour
                         molecule = null;
                         index = i;
                     }
+                    else
+                    {
+                        // wrong item
+                    }
                 }
             }
 
