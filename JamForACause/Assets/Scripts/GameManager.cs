@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [Header("Script Info:")]
     public GameObject orderManagerObject;
     public OrdersManager ordersManager;
+    public GameObject scoreObject;
     public ScoreUI scoreUI;
 
     [Header("Element info:")]
@@ -50,12 +51,23 @@ public class GameManager : MonoBehaviour
          */
     }
 
+    private void Start()
+    {
+        ordersManager = orderManagerObject.GetComponent<OrdersManager>();
+        scoreUI = scoreObject.GetComponent<ScoreUI>();
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             CheckPlacement();
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            CheckOrders();
         }
 
         //test - remove later
@@ -191,5 +203,37 @@ public class GameManager : MonoBehaviour
     public void Create()
     {
         CheckCombination();
+    }
+
+    public void CheckOrders()
+    {
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        //Debug.Log(mousePosition.x + ", " + mousePosition.y);
+
+        int index = -1;
+
+        if (molecule != null)
+        {
+            for (int i = 0; i < ordersManager.orders.Count; i++)
+            {
+                if (mousePosition.x > ordersManager.orders[i].transform.position.x - 1.2 &&
+                    mousePosition.x < ordersManager.orders[i].transform.position.x + 1.2 &&
+                    mousePosition.y > ordersManager.orders[i].transform.position.y - 1.2 &&
+                    mousePosition.y < ordersManager.orders[i].transform.position.y + 1.2)
+                {
+                    if (ordersManager.MoleculeToString(ordersManager.orders[i].GetComponent<Order>().moleculeOrdered) == molecule.tag)
+                    {
+                        scoreUI.UpdateScore();
+                        Destroy(molecule);
+                        molecule = null;
+                        index = i;
+                    }
+                }
+            }
+
+            if (index > -1)
+                ordersManager.RemoveOrder(ordersManager.orders[index]);
+        }
     }
 }
