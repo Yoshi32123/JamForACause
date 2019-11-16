@@ -49,7 +49,6 @@ public class Item : MonoBehaviour
         {
             if (hit.collider.name == gameObject.name)
             {
-                Debug.Log(hit.collider.name);
                 mouseHover = true;
             }
         }

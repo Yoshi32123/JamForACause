@@ -11,7 +11,6 @@ public enum Molecule
     Salt,
     Peroxide,
     Rust,
-    Oxygen,
     DryIce,
     BakingSoda,
     Vinegar,
