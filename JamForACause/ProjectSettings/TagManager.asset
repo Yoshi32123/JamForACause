@@ -11,6 +11,9 @@ TagManager:
   - Iron
   - Oxygen
   - Sodium
+  - ElementsList
+  - Beaker
+  - TimerBar
   layers:
   - Default
   - TransparentFX
