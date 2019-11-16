@@ -203,8 +203,6 @@ public class OrdersManager : MonoBehaviour
                 return "Peroxide";
             case Molecule.Rust:
                 return "Rust";
-            case Molecule.Oxygen:
-                return "Oxygen";
             case Molecule.DryIce:
                 return "Dry Ice";
             case Molecule.BakingSoda:
