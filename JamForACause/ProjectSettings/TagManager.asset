@@ -15,6 +15,16 @@ TagManager:
   - Beaker
   - TimerBar
   - Carbon
+  - DryIce
+  - Salt
+  - BakingSoda
+  - Peroxide
+  - Milk
+  - Vinegar
+  - Water
+  - Dry Ice
+  - Baking Soda
+  - Rust
   layers:
   - Default
   - TransparentFX
