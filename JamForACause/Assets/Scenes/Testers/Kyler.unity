@@ -464,16 +464,6 @@ MonoBehaviour:
   elementStorage: {fileID: 0}
   dish: {fileID: 1787282810}
   elements: 
-  water: {fileID: 7841262255436067838, guid: e1b1a022a3b10ae47baa9e670fa7427c, type: 3}
-  salt: {fileID: 5325067160244723658, guid: 1fce15c51b3651a4f9202ce8cd602b0d, type: 3}
-  peroxide: {fileID: 5085772898472024224, guid: 9e26ece4bc7a46d4fb97390ab4c77dbc,
-    type: 3}
-  rust: {fileID: 0}
-  dryIce: {fileID: 7563450901717428300, guid: 07862dc7d028b474f82cae4344d03ce0, type: 3}
-  bakingSoda: {fileID: 664462039681199050, guid: 793dcb5c58e19354ab574200087c1621,
-    type: 3}
-  vinegar: {fileID: 3242551326186185347, guid: cd96b5d68977f8b4b8eeef486d1310c1, type: 3}
-  milk: {fileID: 6668691491598860337, guid: c1e4c88617eaa4d4498e881159e50044, type: 3}
 --- !u!1 &1036666569
 GameObject:
   m_ObjectHideFlags: 0
