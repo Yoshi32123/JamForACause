@@ -18,6 +18,10 @@ public class Order : MonoBehaviour
     // Time left to complete order
     public float Timer { get; set; }
 
+    // Fields for handling deleting
+    public bool expired = false;
+    public bool deleteHandled = false;
+
     // Starting time
     public float lifeSpan;
 
@@ -66,7 +70,8 @@ public class Order : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Timer <= 0)
+            expired = true;
     }
     
     // Update Physics
